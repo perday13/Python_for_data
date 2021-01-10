@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+
+	<p>Results from prediction: <strong>{{pred}}</strong> ; and real value from the observation : <strong>{{true_decade}}</strong> (true value : {{true_value}}) </p>
+
+	{% if pred==true_decade %}
+			<p style="color: green">Good prediction of the decade</p>
+	{% else %}
+			<p style="color: red">Bad prediction of the decade</p>
+	{% endif %}
+
+{% endblock %}

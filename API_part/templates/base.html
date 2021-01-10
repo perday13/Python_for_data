@@ -1,0 +1,68 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+	My flask app
+{% endblock %}
+
+
+
+{% block content %}
+
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            h1
+            {
+                text-align:center
+            }
+
+            body
+            {
+                background-image: url('/static/back.jpg');
+                background-attachment: scroll;
+            }
+            .link
+            {
+                font-size:x-large;
+            }
+            .button
+            {
+                text-align:center;
+                font-size: xx-large
+            }
+            .names
+            {
+                font-weight: bolder;
+                text-align: right      
+            }
+        </style>
+        <title>My flask app</title>
+    </head>
+    
+    <body>
+        <h1>PYTHON FOR DATA ANALYSIS PROJECT</h1>
+    </body>
+	
+    <div class="link">
+        <p> Link to our dataset : <a href="https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD">Dataset</a></p>
+    </div>
+
+    <p> Dataset : Audio features of songs ranging from 1922 to 2011</p>
+
+	{% block page_content %}
+    <div class="button">
+        <a href="predict">
+            <button>Start predicting</button>
+        </a> 
+    </div>
+	{% endblock %}
+
+	{% block footer %}
+    <div class="names">
+        <p> VINTELER Louis-Raphael</p>
+        <p> VANACKER Nicolas</p>
+        <p> SENEJKO Morgane</p>    
+    </div>
+	{% endblock %}
+
+{% endblock %}

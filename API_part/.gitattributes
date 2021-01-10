@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+API_part.zip filter=lfs diff=lfs merge=lfs -text
+=======
+result.joblib filter=lfs diff=lfs merge=lfs -text
+YearPredictionMSD.txt filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 817b3a3... test
